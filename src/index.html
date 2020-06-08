@@ -24,12 +24,32 @@
       .activity__overlay .subtitle{font-family: Arial;font-size: 13.3px;font-weight: 400;letter-spacing: 0.025em;color: #ffffff;margin-top: 8px;}
       .gradient{width: 600px;height: 150px; background-image: linear-gradient(to top,rgb(78, 195, 167), rgba(0,124,174));}
       .gradient .gradient__descr{text-align: center;font-family: Roboto;font-size: 12px;font-weight: 400;color: #fcfbfb;padding-top:24px;}
-      .gradient_height{height: 588px;}
+      .gradient_height{height: 456px; position: relative;padding-top: 33px;}
       .offer{padding: 20px 75px 23px 72px;}
-      .offer__title{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; text-align: center;}
-      .offer__subtitle{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; margin-top: 9px;}
-      .offer__descr{font-family: Roboto;font-size: 12px;font-weight: 400;color: #5d5d5d;margin-top: 15px;}
-      .offer__subtitle_mt{margin-top: 23px;}
+      .title{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; text-align: center;}
+      .subtitle{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; margin-top: 9px;}
+      .descr{font-family: Roboto;font-size: 12px;font-weight: 400;color: #5d5d5d;margin-top: 15px;}
+      .subtitle_mt{margin-top: 23px;}
+      .prio__img{height: 247px;}
+      .subtitle_yellow{color: #d1d923;}
+      .descr_white{color: #ffffff;}
+      .gradient .img_absolute{position: absolute; top: 332px; left: 76px;}
+      .descrs{padding-top: 154px;padding-bottom: 30px;}
+      .interess{background:url("img/bg5.jpg")center center/cover no-repeat; padding: 17px 0 17px 0;position: relative;}
+      .cards{display: flex;flex-wrap: wrap; justify-content: space-around; text-align: center;}
+      .cards .card{width: 257px;height: 145px;box-shadow: 0px 5px 8px 0px;background-color: rgba(255,255,255,0.69);margin-top: 16px;padding: 13px 37px 15px;}
+      .cards .card_mini{height: 106.5px;}
+      .title_interess{font-size: 18px;color: #fdfdfd;font-family: BebasNeue;text-shadow: 0px 1px;}
+      .title_card{font-size: 14px;}
+      .descr_card{font-size: 10px;color: #5d5d5d;font-family: Roboto;margin-top: 15px;}
+      .block{width: 600px;height: 55px;background-color: #fdfdfd;box-shadow: 0px 11px 10px 0px;position: absolute;top: -42.5px;z-index: -1;}
+      /* .demo{height: 464px;} */
+      .gradient_demo{height:301px;background-image: linear-gradient(to bottom,rgb(78, 195, 167), rgba(0,124,174));margin-top: 163px;text-align: center;position: relative;}
+      .descr_demo{font-size: 12px;color: #f8f5f5;padding-top: 149px;}
+      .btns{display: flex; justify-content: space-between;margin-top: 21px;}
+      .demo__img{position: absolute; top: -136px;left: 96px;}
+      .footer{text-align: center;padding: 33px 0 33px 0;}
+      .btn{width: 186px;height: 32px;background-color: #d1d923;border-radius: 16.0px;Text: ДЕМО ПК;font-family: Roboto;font-size: 11.1px;font-weight: 400;color: #126889;line-height: 32px; text-align: center;}
     </style>
   </head>
   <body>
@@ -85,19 +105,111 @@
         </div>
       </section>
       <section class="offer">
-        <div class="offer__title">ЧТО МЫ ПРЕДЛАГАЕМ?</div>
+        <div class="title">ЧТО МЫ ПРЕДЛАГАЕМ?</div>
         <img src="img/bg2.jpg" alt="image">
         <div class="wrapper">
-          <div class="offer__subtitle">РЕГИСТРАЦИЯ УЧАСТНИКОВ</div>
-          <div class="offer__descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
-          <div class="offer__subtitle offer__subtitle_mt">3D локация</div>
-          <div class="offer__descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
+          <div class="subtitle">РЕГИСТРАЦИЯ УЧАСТНИКОВ</div>
+          <div class="descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
+          <div class="subtitle subtitle_mt">3D локация</div>
+          <div class="descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
         </div>
       </section>
       <section class="prio">
-        <img src="img/bg3.png" alt="">
-        <div class="gradient gradient_height">
-
+        <div class="prio__img">
+          <img src="img/bg3.png" alt="">
+        </div>
+        <div class="prio__item">
+          <div class="gradient gradient_height">
+            <div class="wrapper">
+              <div class="subtitle subtitle_yellow">индивидуальные 3д стенды</div>
+              <div class="descr descr_white">Для онлайн выставок типовые и индивидуальные 3d стенды под ваши нужды. От простых стендов с ёмким наполнением до индивидуально разработанных с множеством функций.</div>
+              <div class="subtitle subtitle_yellow">двустороняя связь с менеджером</div>
+              <div class="descr descr_white">Двухсторонняя связь пользователей посредством телеграмм чата, видео /аудио звонка. Мы перенаправим гостя непосредственно к вашему менеджеру.</div>
+              <div class="subtitle subtitle_yellow">имиджевые материалы на площадке</div>
+              <div class="descr descr_white">Размещение всей необходимой информации о компании на площадке. Имиджевые ролики на экранах, каталог и/или презентация, контакты и интерактивные экспонаты.</div>
+            </div>
+            <img class="img_absolute" src="img/bg4.jpg" alt="img">
+          </div>
+        </div>
+      </section>
+      <section class="descrs">
+        <div class="wrapper">
+          <div class="subtitle">сбор статистики</div>
+          <div class="descr">
+            Сбор статистики посещения мероприятия и заинтересованности к конкретным активностям на площадке. Мы предлагаем поддержку мобильной и десктопной версии во всех браузерах.  
+            И наше любимое - интерактив. Информация о компаниях не просто в виде лендинга, а с полноценным погружением в тему.
+          </div>
+          <div class="subtitle">интерактив</div>
+          <div class="descr">
+            Информация о компаниях не просто в виде лендинга, а с полноценным погружением в тему. Онлайн трансляции панельных дискуссий и конференций. Презентации на 3d тач-столах экспонентов, объемные экспонаты с возможностью взаимодействия. Возможность присутствовать на выставке 
+            посредством vr очков или перенос объекта выставки к себе домой с помощью дополненной реальности.
+          </div>
+        </div>
+      </section>
+      <section class="interess">
+        <div class="title title_interess">
+          Для кого будет интересно?
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="title title_card">Организаторы, экспоненты <br> и гости профильных выставок.</div>
+            <div class="descr descr_card">Перенос несостоявшихся выставок в онлайн формат, налаживание связей, заключение договоров.</div>
+          </div>
+          <div class="card">
+            <div class="title title_card">Конечные заказчики.</div>
+            <div class="descr descr_card">Презентация продуктов, услуг, организация виртуальных шоу-румов. Ритейл, недвижимость, гос корпорации и многие другие.</div>
+          </div>
+          <div class="card card_mini">
+            <div class="title title_card">PR агентства.</div>
+            <div class="descr descr_card">Широкий инфоповод нового формата для ваших клиентов.</div>
+          </div>
+          <div class="card card_mini">
+            <div class="title title_card">Event агентства.</div>
+            <div class="descr descr_card">Презентации и тимбилдинги для сотрудников и клиентов компаний в 3d формате.</div>
+          </div>
+        </div>
+        <div class="block">
+        </div>
+      </section>
+      <section class="demo">
+        <div class="gradient gradient_demo">
+          <img class="demo__img" src="img/bg6.jpg" alt="">
+          <div class="wrapper">
+            <div class="descr descr_white descr_demo">
+              Предлагаем вам воспользоваться демо версией нашего проекта для общего понимания работы ресурса. Это заготовка, которая может бесконечно наполняться в зависимости от того, <br> что вам нужно.
+            </div>
+            <div class="btns">
+              <a href="https://virtual-event.now.sh"><div class="btn">ДЕМО ПК</div></a>
+              <a href="https://virtual-tour-mobile.now.sh"><div class="btn">ДЕМО МОБАЙЛ</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="wrapper">
+          <div class="descr">
+            Демонстрируйте свои услуги и товары, привлекайте партнеров и заказчиков, общайтесь и заключайте сделки. 
+            <br><br>
+            Все принципы профильных выставок и ивентов сохранены, только волноваться о сроках застройки больше не нужно. Да и цены 3d формата в разы ниже физической застройки.
+          </div>
+        </div>
+      </section>
+      <section class="header">
+        <div class="header__logo">
+          <!-- <a href="htps://event-tech.org"><img src="logo/logo.png" alt="logo"></a> -->
+          <a href="htps://event-tech.org"><img src="https://sun7-7.userapi.com/2MBBdieJJ8o23657PeGnU9yyqDL7BaKiS8IFoQ/cpHOVKJozd8.jpg" alt="logo"></a>
+        </div>
+        <div class="header__social">
+          <!-- <a href="https://www.instagram.com/event_technologies/"><img src="icons/instagram.png" alt="instagram"></a> -->
+          <a href="https://www.instagram.com/event_technologies/"><img src="https://sun9-57.userapi.com/eb5S0yXfRn9kEWl3FJgzpMImJuSS2x0ksnBIQQ/74TXEvS44GM.jpg" alt="instagram"></a>
+          <!-- <a href="https://vimeo.com/user11168299/videos"><img src="icons/vimeo.png" alt="vimeo"></a> -->
+          <a href="https://vimeo.com/user11168299/videos"><img src="https://sun9-58.userapi.com/yKjrHq87RGtu8YEBINRZf5f-4v7i-HHBcXWiJA/3JFIJFwEkuU.jpg" alt="vimeo"></a>
+          <a href="https://www.facebook.com/event.technologie/"><img src="https://sun9-43.userapi.com/JnY-oHLmaLOGwrcIGSOCkRhgaJB6wyYIg93IJA/lpiMpIFGI5I.jpg" alt="facebook"></a>
+          <!-- <a href="https://www.facebook.com/event.technologie/"><img src="icons/facebook.png" alt="facebook"></a> -->
+        </div>
+        <div class="header__contacts">
+          <!-- <a href=""><img src="icons/email.png" alt="email and namberphone"></a> -->
+          <a href=""><img src="https://sun7-8.userapi.com/mvZU1Z4Jme1kH4woJrhEHqx7FC0qOfKwkL8v0A/oiB0uuC6s2A.jpg" alt="email and namberphone"></a>
         </div>
       </section>
     </div>
