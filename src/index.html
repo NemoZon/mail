@@ -11,6 +11,7 @@
     <!-- font-family: 'Roboto', sans-serif; --> <!-- font-weight: 400 or 700 -->
     <style type="text/css">
     .container{width: 600px;margin: 0 auto;}
+    .wrapper{width: 396px; margin: 0 auto;}
       *{box-sizing: border-box;padding: 0px;margin: 0px;}
       .header{height: 100px; width: 100%; display:flex;justify-content: space-around;padding: 22px 59px 22px 59px; align-items: center;}
       .header__social{width: 90px;display: flex; justify-content: space-between;}
@@ -18,9 +19,16 @@
       a{text-decoration: none; font-family: AA-BebasNeue;font-size: 12px;line-height: 1.2;font-weight: 400;letter-spacing: 0.1em;color: #169db1;}
       .activity{background: url("img/bg1.jpg")center center/cover no-repeat; width: 600px;min-height: 400px;}
       .activity__overlay{background-color: rgba(0,0,0, 0.6); width: 396px;height: 115px;padding: 14px 49px 14px 37px;}
-      .title{box-shadow: 0px 2px 0px 0px #022730;font-size: 31.3px;font-family: Arial;font-weight: 700;letter-spacing: 0.025em;color: #0bf4f1;text-transform: uppercase;}
-      .subtitle{font-family: Arial;font-size: 13.3px;font-weight: 400;letter-spacing: 0.025em;color: #ffffff;margin-top: 8px;}
+      .activity__overlay .title{text-shadow: 0px 2px #022730;font-size: 31.3px;font-family: Arial;font-weight: 700;letter-spacing: 0.025em;color: #0bf4f1;text-transform: uppercase;}
+      .activity__overlay .subtitle{font-family: Arial;font-size: 13.3px;font-weight: 400;letter-spacing: 0.025em;color: #ffffff;margin-top: 8px;}
       .gradient{width: 600px;height: 150px; background-image: linear-gradient(to top,rgb(78, 195, 167), rgba(0,124,174));}
+      .gradient .gradient__descr{text-align: center;font-family: Roboto;font-size: 12px;font-weight: 400;color: #fcfbfb;padding-top:24px;}
+      .gradient_height{height: 588px;}
+      .offer{padding: 20px 75px 23px 72px;}
+      .offer__title{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; text-align: center;}
+      .offer__subtitle{font-family: RobotoCondensed;font-size: 16px;font-weight: 700;text-transform: uppercase;color: #169db1; margin-top: 9px;}
+      .offer__descr{font-family: Roboto;font-size: 12px;font-weight: 400;color: #5d5d5d;margin-top: 15px;}
+      .offer__subtitle_mt{margin-top: 23px;}
     </style>
   </head>
   <body>
@@ -49,10 +57,28 @@
         </div>
       </section>
       <section class="gradient">
-        <div class="gradient__descr">
-          Мир меняется, а вместе с ним меняемся и мы. Локдаун повлиял на все сферы жизни, но при этом дал возможность развивать новые форматы и технологии. <br> <br>
-          Представляем нашу новинку - 3d мероприятия. <br> <br>
-          Организуйте и посещайте выставки и ивенты прямо из дома.
+        <div class="wrapper">
+          <div class="gradient__descr">
+            Мир меняется, а вместе с ним меняемся и мы. Локдаун повлиял на все сферы жизни, но при этом дал возможность развивать новые форматы и технологии. <br> <br>
+            Представляем нашу новинку - 3d мероприятия. <br> <br>
+            Организуйте и посещайте выставки и ивенты прямо из дома.
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div class="offer__title">ЧТО МЫ ПРЕДЛАГАЕМ?</div>
+        <img src="img/bg2.jpg" alt="image">
+        <div class="wrapper">
+          <div class="offer__subtitle">РЕГИСТРАЦИЯ УЧАСТНИКОВ</div>
+          <div class="offer__descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
+          <div class="offer__subtitle offer__subtitle_mt">3D локация</div>
+          <div class="offer__descr">При помощи базы email адресов или со свободным входом после заполнения формы. Все данные об участниках передаются клиенту.</div>
+        </div>
+      </section>
+      <section class="prio">
+        <img src="img/bg3.png" alt="">
+        <div class="gradient gradient_height">
+
         </div>
       </section>
     </div>
